@@ -12,7 +12,6 @@ public class SwitchValues {
 		y = x - y;
 		x = x - y;
 		System.out.println("Sada je x = " + x + ", a y = " + y);
-
 	}
 
 }
