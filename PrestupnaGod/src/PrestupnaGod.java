@@ -7,6 +7,7 @@ public class PrestupnaGod {
 		System.out.println("Unesite zeljenu godinu: ");
 		Scanner sc = new Scanner(System.in);
 		int godina = sc.nextInt();
+		sc.close();
 		if(godina % 4 == 0) {
 			if(godina%100 == 0) {
 				if (godina%400 == 0) {
