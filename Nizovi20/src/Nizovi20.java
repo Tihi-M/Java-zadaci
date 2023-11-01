@@ -8,7 +8,6 @@ public class Nizovi20 {
 		sc.close();
 		
 		int[] cubeValues = {1, 2 ,3 ,4 ,5 ,6};
-		int[] cubesRound = new int[cubesNum];
 		int[] valuesCounter = new int[6];
 		for(int i = 0; i < cubesNum;i++) {
 			int round = 1 + (int)(Math.random()*6);

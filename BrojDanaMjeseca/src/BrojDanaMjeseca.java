@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class BrojDanaMjeseca {
 
 	public static boolean prestupnaGod(int godina) {
-		boolean prestupna = false;
 		if(godina % 4 == 0) {
 			if(godina%100 == 0) {
 				if (godina%400 == 0) {
