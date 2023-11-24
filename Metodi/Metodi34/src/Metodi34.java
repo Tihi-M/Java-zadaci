@@ -1,36 +1,36 @@
 import java.util.Scanner;
-public class Metodi33 {
+public class Metodi34 {
+	
 	public static boolean provjeriUnos(int x, int y) {
 		if(x>y)
 			return false;
 		return true;
 	}
 	
-	public static int presjekIntervala(int odA, int doB,int odC, int doD ) {
-		int duzinaPresjeka = 0;
-		if(odC > doB)
-			return duzinaPresjeka;
-		else if (odA > doD)
-			return duzinaPresjeka;
-		else if(doB>doD) {  
-			if(odC<odA) { 
-				duzinaPresjeka = doD-odA;
-				return duzinaPresjeka;
+	public static int unijaIntervala(int odA, int doB,int odC, int doD ) {
+		int duzinaIntervala = 0;
+		if (doB> doD) {
+			if(odA < odC) {
+				duzinaIntervala = odA+doB;
+				return duzinaIntervala;
 			}
 			else {
-				duzinaPresjeka = doB-odA;
-			}
-		}else {
-			if(odC<odA) { 
-				duzinaPresjeka = doD-odC;
-				return duzinaPresjeka;
+				duzinaIntervala = odC+doB;
+				return duzinaIntervala;
+				}
 			}
 			else {
-				duzinaPresjeka = doB-odC;
+				if(odA < odC) {
+					duzinaIntervala = odA+doD;
+					return duzinaIntervala;
+				}
+				else {
+					duzinaIntervala = odC+doD;
+					return duzinaIntervala;
+				}
 			}
-		}
-		return duzinaPresjeka;
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -50,8 +50,9 @@ public class Metodi33 {
 			c = sc.nextInt();
 			d = sc.nextInt();
 		}
-		System.out.println("Duzina presjeka intervala: "+presjekIntervala(a,b,c,d));
+		System.out.println("Duzina unije intervala: "+unijaIntervala(a,b,c,d));
 		sc.close();
+		}
+
 	}
 
-}
