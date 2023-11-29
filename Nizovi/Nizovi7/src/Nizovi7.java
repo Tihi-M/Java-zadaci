@@ -17,6 +17,7 @@ public class Nizovi7 {
 			else {
 				
 				maxOdd = tempMax;
+				tempMax = 0;
 			}
 		}
 		sc.close();
