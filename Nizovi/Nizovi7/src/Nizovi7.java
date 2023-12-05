@@ -7,14 +7,17 @@ public class Nizovi7 {
 		int arrLength = sc.nextInt();
 		int[] arr= new int[arrLength];
 		int maxOdd = 0;
+		int tempMax = 0;
 		for(int i = 0;i<arrLength;i++) {
 			System.out.println("Unesite clan niza: ");
 			arr[i] = sc.nextInt();
 			if((arr[i])%2 != 0) {
-				maxOdd++;
+				tempMax++;
 			}
 			else {
-				maxOdd = 0;
+				
+				maxOdd = tempMax;
+				tempMax = 0;
 			}
 		}
 		sc.close();
