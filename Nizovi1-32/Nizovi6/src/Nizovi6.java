@@ -2,11 +2,7 @@ import java.util.Scanner;
 
 public class Nizovi6 {
 	public static Scanner sc = new Scanner(System.in);
-	public static void print(int [] arr) {
-		for(int i = 0;i<arr.length;i++) {
-			System.out.print(arr[i]+" ");
-		}
-	}
+	
 	public static void inputValues(int [] arr) {
 		int el;
 		for(int i=0;i<arr.length;i++) {
@@ -42,5 +38,4 @@ public class Nizovi6 {
 		sc.close();
 		System.out.println(changeSigns(arr));
 	}
-
 }
