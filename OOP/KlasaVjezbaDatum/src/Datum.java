@@ -45,7 +45,17 @@ public class Datum {
 		if(this.d == d && this.m == m && this.g == g)return true;
 		else return false;	
 	}
-	
+	public int compareTo(Datum d) {
+		if (sameDate(d.getD(),d.getM(),d.getG())) {
+		return 0;	
+		}else if (this.g>d.getG()) {
+			return 1;
+		}else if (this.m > d.getM()) {
+			return 1;
+		}else if (this.d > d.getD()) {
+			return 1;
+		}else return -1;
+	}
 	public int compareTo(int d, int m, int g) {
 		if (sameDate(d,m,g)) {
 		return 0;	

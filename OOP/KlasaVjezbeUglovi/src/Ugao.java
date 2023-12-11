@@ -55,6 +55,11 @@ public class Ugao {
 		}
 		else System.out.println("Invalid input");
 	}
+	public Ugao() {
+		this.step= 0;
+		this.min = 0;
+		this.sec = 0;
+		}
 	public int CompareTo(Ugao u) {
 		if(this.step>u.step)return 1;
 		else if(this.step == u.step) {
